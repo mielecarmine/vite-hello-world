@@ -1,7 +1,19 @@
-<script></script>
+<script>
+import AppTitle from "./components/AppTitle.vue";
+import AppJumbo from "./components/AppJumbo.vue";
+
+export default {
+  components: {
+    AppTitle: AppTitle,
+    AppJumbo: AppJumbo,
+  },
+};
+</script>
 
 <template>
-  <div class="container"></div>
+  <AppJumbo>
+    <AppTitle></AppTitle>
+  </AppJumbo>
 </template>
 
 <style scoped></style>
